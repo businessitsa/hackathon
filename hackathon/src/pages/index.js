@@ -19,8 +19,13 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/register">
+            Register Your Team
+          </Link>
+          <Link
+            className="button button--outline button--secondary button--lg"
+            to="/docs/about">
+            Learn More
           </Link>
         </div>
       </div>
@@ -32,10 +37,19 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={siteConfig.title}
+      description="Bringing developers, designers and payment innovators together to explore how open and interoperable payment technology can improve everyday transactions for informal businesses.">
       <HomepageHeader />
       <main>
+        <section className={styles.introSection}>
+          <div className="container text--center">
+            <p className={styles.introText}>
+              Bringing developers, designers and payment innovators together to
+              explore how open and interoperable payment technology can improve
+              everyday transactions for informal businesses.
+            </p>
+          </div>
+        </section>
         <HomepageFeatures />
       </main>
     </Layout>
