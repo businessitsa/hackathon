@@ -1,49 +1,61 @@
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Register by Aug 26',
+    emoji: '📝',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Sign up before the deadline as a team of three to five participants —
+        developers, designers, fintech professionals, students and community
+        innovators are all welcome.
       </>
     ),
+    link: '/docs/register',
+    linkLabel: 'Register now',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '4-Week Online Hackathon',
+    emoji: '💻',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Learn about the Interledger Protocol and Open Payments, then research,
+        design and prototype a payment solution for South Africa's spaza shops
+        with workshops and mentor support along the way.
       </>
     ),
+    link: '/docs/how-it-works',
+    linkLabel: 'How it works',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'In-Person Finale',
+    emoji: '🏆',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Pitch your proof of concept to the judging panel at the final in-person
+        judging event in Cape Town — with prizes and swag up for grabs.
       </>
     ),
+    link: '/docs/prizes',
+    linkLabel: 'See the prizes',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({emoji, title, description, link, linkLabel}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <span className={styles.featureEmoji} role="img" aria-hidden="true">
+          {emoji}
+        </span>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
+        <Link to={link}>{linkLabel}</Link>
       </div>
     </div>
   );

@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Cape Dev Open Payments Hackathon',
+  tagline: "Building better payment solutions for South Africa's spaza shops.",
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -47,26 +47,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -83,70 +65,87 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: '{CTSD} Meetup',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Cape Dev Open Payments Hackathon Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'eventSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Event Info',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          {to: '/docs/about', label: 'About Us', position: 'left'},
+          {to: '/docs/faq', label: 'FAQ', position: 'left'},
+          {to: '/docs/register', label: 'Register', position: 'right'},
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'The Event',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'About the Hackathon',
+                to: '/docs/about',
+              },
+              {
+                label: 'The Challenge',
+                to: '/docs/challenge',
+              },
+              {
+                label: 'How It Works',
+                to: '/docs/how-it-works',
+              },
+              {
+                label: 'Schedule',
+                to: '/docs/schedule',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Participate',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Register',
+                to: '/docs/register',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Who Can Participate',
+                to: '/docs/who-can-participate',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Rules',
+                to: '/docs/rules',
+              },
+              {
+                label: 'FAQ',
+                to: '/docs/faq',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Resources',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Technology & Resources',
+                to: '/docs/technology',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Interledger Foundation',
+                href: 'https://interledger.org/',
+              },
+              {
+                label: 'Open Payments',
+                href: 'https://openpayments.dev/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} {CTSD} Meetup — Cape Dev Open Payments Hackathon. Supported by the Interledger Foundation.`,
       },
       prism: {
         theme: prismThemes.github,
