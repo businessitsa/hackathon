@@ -2,29 +2,106 @@
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
+ *
+ * Brand palette:
+ *   Deep Slate Olive #172713 — foundation (~70%)
+ *   Venice Green     #2CD5C4 — brand colour (~25%)
+ *   Lemon Yellow     #F2FF26 — highlights & CTAs (~5%)
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Brand tokens */
+  --brand-olive: #172713;
+  --brand-olive-darker: #0f1a0d;
+  --brand-olive-light: #22391c;
+  --brand-green: #2cd5c4;
+  --brand-yellow: #f2ff26;
+  --brand-yellow-hover: #e2ef14;
+
+  /* Venice Green, darkened for readable links/buttons on light backgrounds */
+  --ifm-color-primary: #0f8a7e;
+  --ifm-color-primary-dark: #0e7c72;
+  --ifm-color-primary-darker: #0d756b;
+  --ifm-color-primary-darkest: #0a6058;
+  --ifm-color-primary-light: #11988b;
+  --ifm-color-primary-lighter: #129f92;
+  --ifm-color-primary-lightest: #15b7a7;
+
+  --ifm-heading-color: var(--brand-olive);
+  --ifm-font-color-base: #23301f;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(44, 213, 196, 0.15);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Venice Green at full strength on the olive foundation */
+  --ifm-color-primary: #2cd5c4;
+  --ifm-color-primary-dark: #26c2b2;
+  --ifm-color-primary-darker: #24b7a8;
+  --ifm-color-primary-darkest: #1e968a;
+  --ifm-color-primary-light: #42d9ca;
+  --ifm-color-primary-lighter: #4fdccd;
+  --ifm-color-primary-lightest: #75e3d8;
+
+  /* Deep Slate Olive foundation instead of Docusaurus grey */
+  --ifm-background-color: #14210f;
+  --ifm-background-surface-color: var(--brand-olive);
+  --ifm-navbar-background-color: var(--brand-olive);
+  --ifm-heading-color: #eef5ec;
+  --ifm-font-color-base: #d7e2d2;
+
+  --docusaurus-highlighted-code-line-bg: rgba(44, 213, 196, 0.12);
+}
+
+/* Lemon Yellow is the "look here" colour — selection included */
+::selection {
+  background: var(--brand-yellow);
+  color: var(--brand-olive);
+}
+
+/* Slim Venice Green accent under the navbar */
+.navbar {
+  border-bottom: 2px solid var(--brand-green);
+}
+
+/* Primary call-to-action: the 5% of Lemon Yellow */
+.button--cta {
+  --ifm-button-background-color: var(--brand-yellow);
+  --ifm-button-border-color: var(--brand-yellow);
+  color: var(--brand-olive);
+}
+
+.button--cta:hover,
+.button--cta:focus {
+  --ifm-button-background-color: var(--brand-yellow-hover);
+  --ifm-button-border-color: var(--brand-yellow-hover);
+  color: var(--brand-olive);
+}
+
+/* Secondary action: Venice Green outline on the dark hero */
+.button--ghost-green {
+  --ifm-button-background-color: transparent;
+  --ifm-button-border-color: var(--brand-green);
+  color: var(--brand-green);
+}
+
+.button--ghost-green:hover,
+.button--ghost-green:focus {
+  --ifm-button-background-color: rgba(44, 213, 196, 0.12);
+  --ifm-button-border-color: var(--brand-green);
+  color: var(--brand-green);
+}
+
+/* Footer stays on the olive foundation in both colour modes */
+.footer--dark {
+  --ifm-footer-background-color: var(--brand-olive-darker);
+  --ifm-footer-color: #a9bba3;
+  --ifm-footer-link-color: #cfe0ca;
+  --ifm-footer-title-color: var(--brand-green);
+}
+
+.footer--dark .footer__link-item:hover {
+  color: var(--brand-green);
 }

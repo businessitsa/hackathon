@@ -4,15 +4,44 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 5rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: var(--brand-olive);
+  background-image: radial-gradient(
+      ellipse 80% 60% at 50% -10%,
+      rgba(44, 213, 196, 0.22),
+      transparent 70%
+    ),
+    linear-gradient(180deg, var(--brand-olive-light) 0%, var(--brand-olive) 60%);
+  color: #f0f6ee;
+}
+
+.heroBanner :global(.hero__title) {
+  color: #ffffff;
+}
+
+.heroBanner :global(.hero__title)::after {
+  content: '';
+  display: block;
+  width: 4.5rem;
+  height: 0.25rem;
+  margin: 1rem auto 0;
+  border-radius: 2px;
+  background: var(--brand-yellow);
+}
+
+.heroBanner :global(.hero__subtitle) {
+  color: #a9d9d1;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 2.5rem 1rem;
   }
 }
 
@@ -22,6 +51,7 @@
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .introSection {
