@@ -9,7 +9,7 @@ const FeatureList = [
     emoji: '📝',
     description: (
       <>
-        Sign up before the deadline as a team of three to five participants —
+        Sign up before the deadline as a team of three to five participants -
         developers, designers, fintech professionals, students and community
         innovators are all welcome.
       </>
@@ -35,8 +35,7 @@ const FeatureList = [
     emoji: '🏆',
     description: (
       <>
-        Pitch your proof of concept to the judging panel at the final in-person
-        judging event in Cape Town — with prizes and swag up for grabs.
+        The top 5 teams will pitch in person.
       </>
     ),
     link: '/docs/prizes',

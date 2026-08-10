@@ -4,26 +4,27 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer'
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Cape Dev Open Payments Hackathon',
-  tagline: "Building better payment solutions for South Africa's spaza shops.",
+  title: 'Cape Town Development Community - Hackathon',
+  tagline:
+    "Powered by the Interledger Foundation, this hackathon empowers developers to build better payment solutions for South Africa's spaza shops.",
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true // Improve compatibility with the upcoming Docusaurus v4
   },
 
   // Set the production url of your site here
-  url: 'https://businessitsa.github.io',
+  url: 'https://hackathon.devmeetup.capetown',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/hackathon/',
+  // The custom domain serves the site from the root
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -37,7 +38,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en']
   },
 
   presets: [
@@ -46,14 +47,14 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: './sidebars.js'
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
-        },
-      }),
-    ],
+          customCss: './src/css/custom.css'
+        }
+      })
+    ]
   ],
 
   themeConfig:
@@ -62,25 +63,21 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: true
       },
       navbar: {
-        title: '{CTSD} Meetup',
-        logo: {
-          alt: 'Cape Dev Open Payments Hackathon Logo',
-          src: 'img/logo.svg',
-        },
+        title: 'CTSD Meetup',
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'eventSidebar',
             position: 'left',
-            label: 'Event Info',
+            label: 'Event Info'
           },
-          {to: '/docs/about', label: 'About Us', position: 'left'},
-          {to: '/docs/faq', label: 'FAQ', position: 'left'},
-          {to: '/docs/register', label: 'Register', position: 'right'},
-        ],
+          { to: '/docs/about', label: 'About Us', position: 'left' },
+          { to: '/docs/faq', label: 'FAQ', position: 'left' },
+          { to: '/docs/register', label: 'Register', position: 'right' }
+        ]
       },
       footer: {
         style: 'dark',
@@ -90,68 +87,68 @@ const config = {
             items: [
               {
                 label: 'About the Hackathon',
-                to: '/docs/about',
+                to: '/docs/about'
               },
               {
                 label: 'The Challenge',
-                to: '/docs/challenge',
+                to: '/docs/challenge'
               },
               {
                 label: 'How It Works',
-                to: '/docs/how-it-works',
+                to: '/docs/how-it-works'
               },
               {
                 label: 'Schedule',
-                to: '/docs/schedule',
-              },
-            ],
+                to: '/docs/schedule'
+              }
+            ]
           },
           {
             title: 'Participate',
             items: [
               {
                 label: 'Register',
-                to: '/docs/register',
+                to: '/docs/register'
               },
               {
                 label: 'Who Can Participate',
-                to: '/docs/who-can-participate',
+                to: '/docs/who-can-participate'
               },
               {
                 label: 'Rules',
-                to: '/docs/rules',
+                to: '/docs/rules'
               },
               {
                 label: 'FAQ',
-                to: '/docs/faq',
-              },
-            ],
+                to: '/docs/faq'
+              }
+            ]
           },
           {
             title: 'Resources',
             items: [
               {
                 label: 'Technology & Resources',
-                to: '/docs/technology',
+                to: '/docs/technology'
               },
               {
                 label: 'Interledger Foundation',
-                href: 'https://interledger.org/',
+                href: 'https://interledger.org/'
               },
               {
                 label: 'Open Payments',
-                href: 'https://openpayments.dev/',
-              },
-            ],
-          },
+                href: 'https://openpayments.dev/'
+              }
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} {CTSD} Meetup — Cape Dev Open Payments Hackathon. Supported by the Interledger Foundation.`,
+        copyright: `Copyright © ${new Date().getFullYear()} CTSD Meetup - Cape Town Software Development - Hackathon. Supported by the Interledger Foundation.`
       },
       prism: {
         theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
-};
+        darkTheme: prismThemes.dracula
+      }
+    })
+}
 
-export default config;
+export default config

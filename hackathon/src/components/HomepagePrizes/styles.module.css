@@ -1,0 +1,96 @@
+/**
+ * Prizes band - Deep Slate Olive foundation in both colour modes,
+ * Venice Green card accents, Lemon Yellow reserved for 1st place + CTA.
+ */
+
+.prizes {
+  padding: 4rem 0;
+  background-color: var(--brand-olive);
+  background-image: radial-gradient(
+    ellipse 70% 80% at 50% 110%,
+    rgba(44, 213, 196, 0.16),
+    transparent 70%
+  );
+  color: #d7e2d2;
+}
+
+.prizesTitle {
+  color: #ffffff;
+  font-size: 2.25rem;
+}
+
+.prizesSubtitle {
+  color: #a9d9d1;
+  max-width: 38rem;
+  margin: 0 auto 2.5rem;
+}
+
+.prizeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.prizeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 2rem 1.25rem;
+  border-radius: 12px;
+  background: var(--brand-olive-light);
+  border: 1px solid rgba(44, 213, 196, 0.35);
+}
+
+.prizeEmoji {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.prizePlace {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-green);
+}
+
+.prizeAmount {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.prizeBlurb {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #a9bba3;
+}
+
+.prizeActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.prizeDetailsLink {
+  color: var(--brand-green);
+  font-weight: 600;
+}
+
+.prizeDetailsLink:hover {
+  color: var(--ifm-color-primary-lightest);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .prizeGrid {
+    grid-template-columns: 1fr;
+    max-width: 22rem;
+  }
+}
