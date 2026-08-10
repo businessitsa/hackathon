@@ -16,12 +16,54 @@ different payment providers.
 This can make it difficult for small businesses to adopt digital payments
 while maintaining control over their costs and cash flow.
 
+## The numbers
+
+The scale of the informal payment economy is significant:
+
+- Approximately **150,000 spaza shops** operate nationally, contributing
+  around **5.2% of GDP** and supporting roughly **2.6 million livelihoods**
+- Informal retail accounts for around **30% of South Africa's total retail
+  market**, and as much as **40–50% of grocery sales** in township communities
+- **Nine out of ten transactions** in South Africa are still completed in
+  cash, with cash dominance close to **90% in the informal sector**
+- **R19.3 billion** was remitted from South Africa to SADC countries in 2024,
+  at an average cost of around **12.7%** - over four times the G20 target of 3%
+
 ## The hackathon question
 
 :::tip
 **How might we use open and interoperable payment technology to make digital
 payments more accessible, affordable and practical for spaza shops?**
 :::
+
+## Why open, interoperable payments?
+
+The [Interledger Protocol](https://interledger.org/developers/get-started/)
+(ILP) and [Open Payments](https://openpayments.dev/) are designed to
+complement existing payment systems rather than compete with them. Three
+properties make them a good fit for the South African problem:
+
+- **Open and currency agnostic.** ILP transfers value between any pair of
+  ledgers, including non-bank stores of value such as mobile money wallets,
+  prepaid balances and fintech accounts. It can route from a bank account to a
+  mobile wallet to a cross-border recipient on a different ledger entirely.
+- **A clean developer primitive.** Open Payments wallet addresses work like
+  URL-based public aliases for accounts - analogous to email addresses. Any
+  Open Payments enabled application can request quotes, obtain user consent
+  and initiate payments through a single, standard interface, without holding
+  sensitive credentials or integrating with each bank individually.
+- **Aligned with where local rails are heading.** South Africa's instant
+  payment systems are built on ISO 20022 messaging standards, which converge
+  with what ILP and Open Payments expect at the edges. Solutions built on Open
+  Payments today are not orphaned from the direction of the local ecosystem.
+
+In practice this means a shopper could pay any merchant who exposes a wallet
+address - no point-of-sale device and no closed-loop scheme lock-in - and
+low-value, peer-to-peer flows (such as stokvel contributions) become simple
+programmable payments.
+
+See [Technology & Resources](./technology.mdx) for the full stack teams will
+work with.
 
 ## What solutions might explore
 
@@ -36,3 +78,29 @@ payments more accessible, affordable and practical for spaza shops?**
 
 Teams do not need to solve every issue. Choose a specific part of the problem
 and address it well.
+
+## How the hackathon works
+
+The hackathon follows four stages, from understanding the problem to pitching
+a working prototype:
+
+- **Understand the challenge.** Review the problem brief and learn how spaza
+  shops handle payments today - the costs, the friction and the workarounds.
+  From there, identify one focused problem your team wants to address rather
+  than trying to solve everything at once.
+- **Define your solution.** Develop your concept: who your users are, the use
+  cases you are targeting and the payment journey you propose. A clear,
+  well-scoped design makes the build phase far more productive.
+- **Build a proof of concept.** Use the Interledger and Open Payments
+  technology, documentation and support sessions to create a functional or
+  partially functional prototype. Workshops and mentors are available along
+  the way - a focused prototype that works beats an ambitious one that
+  doesn't.
+- **Present your solution.** Submit your presentation, recorded walkthrough
+  and demo link for the judging panel to review, explaining the problem you
+  chose, your solution, the technical implementation and the potential impact
+  for spaza shops and their communities. The top five teams are invited to
+  pitch live at the in-person Grand Finale.
+
+See [what teams must submit](./submissions.mdx) and the
+[judging criteria](./judging.mdx) for full details.
