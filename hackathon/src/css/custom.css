@@ -105,3 +105,13 @@
 .footer--dark .footer__link-item:hover {
   color: var(--brand-green);
 }
+
+/* Content cards (e.g. prize cards) get the Venice Green outline and a soft shadow */
+.card {
+  border: 1px solid rgba(44, 213, 196, 0.35);
+  box-shadow: 0 4px 14px rgba(23, 39, 19, 0.16);
+}
+
+[data-theme='dark'] .card {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
