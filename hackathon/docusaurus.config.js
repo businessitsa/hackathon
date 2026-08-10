@@ -66,7 +66,7 @@ const config = {
         respectPrefersColorScheme: true
       },
       navbar: {
-        title: 'Cape Town Software Development Meetup',
+        title: 'Home',
         items: [
           {
             type: 'docSidebar',
@@ -146,7 +146,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Cape Town Software Development Meetup Community.`
+        copyright: `Copyright © ${new Date().getFullYear()} Cape Town Software Development Meetup.`
       },
       prism: {
         theme: prismThemes.github,
