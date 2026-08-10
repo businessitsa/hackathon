@@ -44,7 +44,7 @@ export default function HomepagePrizes() {
           R35 000 in Cash Prizes
         </Heading>
         <p className={styles.prizesSubtitle}>
-          Pitch your prototype at the in-person finale in Cape Town — there's
+          Pitch your prototype at the in-person finale in Cape Town - there's
           real money on the table.
         </p>
         <div className={styles.prizeGrid}>

@@ -9,7 +9,7 @@ const FeatureList = [
     emoji: '📝',
     description: (
       <>
-        Sign up before the deadline as a team of three to five participants —
+        Sign up before the deadline as a team of three to five participants -
         developers, designers, fintech professionals, students and community
         innovators are all welcome.
       </>

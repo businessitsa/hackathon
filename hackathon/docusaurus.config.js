@@ -142,7 +142,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} CTSD Meetup — Cape Dev Open Payments Hackathon. Supported by the Interledger Foundation.`
+        copyright: `Copyright © ${new Date().getFullYear()} CTSD Meetup - Cape Town Software Development - Hackathon. Supported by the Interledger Foundation.`
       },
       prism: {
         theme: prismThemes.github,
