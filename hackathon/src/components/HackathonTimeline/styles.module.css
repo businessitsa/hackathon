@@ -1,0 +1,104 @@
+/**
+ * Vertical event timeline - Venice Green spine and markers,
+ * Lemon Yellow reserved for the Grand Finale.
+ */
+
+.timeline {
+  list-style: none;
+  position: relative;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 1.25rem;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  width: 2px;
+  background: rgba(44, 213, 196, 0.35);
+}
+
+.item {
+  position: relative;
+  margin: 0;
+  padding: 0 0 1.75rem 4rem;
+}
+
+.item:last-child {
+  padding-bottom: 0;
+}
+
+.marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: var(--brand-green);
+  color: var(--brand-olive);
+  box-shadow: 0 0 0 4px rgba(44, 213, 196, 0.2);
+  z-index: 1;
+}
+
+.itemHighlight .marker {
+  background: var(--brand-yellow);
+  box-shadow: 0 0 0 4px rgba(242, 255, 38, 0.25);
+}
+
+.content {
+  border: 1px solid rgba(44, 213, 196, 0.35);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 4px 14px rgba(23, 39, 19, 0.16);
+}
+
+:global([data-theme='dark']) .content {
+  background: var(--brand-olive-light);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.itemHighlight .content {
+  border-color: rgba(242, 255, 38, 0.45);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.phase {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(44, 213, 196, 0.12);
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.description {
+  margin: 0;
+}
