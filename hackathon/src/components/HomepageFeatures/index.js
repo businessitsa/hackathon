@@ -19,7 +19,7 @@ const FeatureList = [
     linkLabel: 'Register now'
   },
   {
-    title: '4-Week Online Hackathon',
+    title: '30-Day Online Hackathon',
     emoji: '💻',
     description: (
       <>
