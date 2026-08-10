@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Cape Town Development Community - Hackathon',
+  title: 'Cape Town Software Development Meetup - Hackathon',
   tagline:
     "Powered by the Interledger Foundation, this hackathon empowers developers to build better payment solutions for South Africa's spaza shops.",
   favicon: 'img/favicon.ico',
@@ -66,7 +66,7 @@ const config = {
         respectPrefersColorScheme: true
       },
       navbar: {
-        title: 'CTSD Meetup',
+        title: 'Cape Town Software Development Meetup',
         items: [
           {
             type: 'docSidebar',
@@ -115,7 +115,7 @@ const config = {
                 to: '/docs/who-can-participate'
               },
               {
-                label: 'Rules',
+                label: 'Rules & Code of Conduct',
                 to: '/docs/rules'
               },
               {
@@ -138,6 +138,10 @@ const config = {
               {
                 label: 'Open Payments',
                 href: 'https://openpayments.dev/'
+              },
+              {
+                label: 'Discord Community',
+                href: 'https://discord.gg/xtRb2UK9k'
               }
             ]
           }

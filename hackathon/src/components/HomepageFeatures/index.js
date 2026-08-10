@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 
 const FeatureList = [
   {
-    title: 'Register by 26th August',
+    title: 'Register by 26 August',
     emoji: '📝',
     description: (
       <>
