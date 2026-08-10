@@ -11,7 +11,8 @@ import { themes as prismThemes } from 'prism-react-renderer'
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Cape Town Development Community - Hackathon',
-  tagline: "Building better payment solutions for South Africa's spaza shops.",
+  tagline:
+    "Powered by the Interledger Foundation, this hackathon empowers developers to build better payment solutions for South Africa's spaza shops.",
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
