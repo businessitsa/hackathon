@@ -98,10 +98,6 @@ const config = {
                 to: '/docs/challenge'
               },
               {
-                label: 'How It Works',
-                to: '/docs/how-it-works'
-              },
-              {
                 label: 'Schedule',
                 to: '/docs/schedule'
               }

@@ -28,7 +28,7 @@ const FeatureList = [
         with workshops and mentor support along the way.
       </>
     ),
-    link: '/docs/how-it-works',
+    link: '/docs/challenge#how-the-hackathon-works',
     linkLabel: 'How it works'
   },
   {
