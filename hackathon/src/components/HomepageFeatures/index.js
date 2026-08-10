@@ -1,21 +1,22 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import clsx from 'clsx'
+import Link from '@docusaurus/Link'
+import Heading from '@theme/Heading'
+import styles from './styles.module.css'
 
 const FeatureList = [
   {
-    title: 'Register by Aug 26',
+    title: 'Register by 26th August',
     emoji: '📝',
     description: (
       <>
-        Sign up before the deadline as a team of three to five participants -
-        developers, designers, fintech professionals, students and community
-        innovators are all welcome.
+        Form a team of three to five participants and register before the
+        deadline. We welcome developers, designers, fintech professionals,
+        students, and anyone passionate about building the future of open
+        payments.
       </>
     ),
     link: '/docs/register',
-    linkLabel: 'Register now',
+    linkLabel: 'Register now'
   },
   {
     title: '4-Week Online Hackathon',
@@ -28,48 +29,44 @@ const FeatureList = [
       </>
     ),
     link: '/docs/how-it-works',
-    linkLabel: 'How it works',
+    linkLabel: 'How it works'
   },
   {
     title: 'In-Person Finale',
     emoji: '🏆',
-    description: (
-      <>
-        The top 5 teams will pitch in person.
-      </>
-    ),
+    description: <>The top 5 teams will pitch in person.</>,
     link: '/docs/prizes',
-    linkLabel: 'See the prizes',
-  },
-];
+    linkLabel: 'See the prizes'
+  }
+]
 
-function Feature({emoji, title, description, link, linkLabel}) {
+function Feature ({ emoji, title, description, link, linkLabel }) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <span className={styles.featureEmoji} role="img" aria-hidden="true">
+      <div className='text--center'>
+        <span className={styles.featureEmoji} role='img' aria-hidden='true'>
           {emoji}
         </span>
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+      <div className='text--center padding-horiz--md'>
+        <Heading as='h3'>{title}</Heading>
         <p>{description}</p>
         <Link to={link}>{linkLabel}</Link>
       </div>
     </div>
-  );
+  )
 }
 
-export default function HomepageFeatures() {
+export default function HomepageFeatures () {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
+      <div className='container'>
+        <div className='row'>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }

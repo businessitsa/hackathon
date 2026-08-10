@@ -74,8 +74,12 @@ const config = {
             position: 'left',
             label: 'Event Info'
           },
-          { to: '/docs/about', label: 'About Us', position: 'left' },
           { to: '/docs/faq', label: 'FAQ', position: 'left' },
+          {
+            href: 'https://www.meetup.com/cape-town-software-development-meetup/',
+            label: 'Meetup',
+            position: 'left'
+          },
           { to: '/docs/register', label: 'Register', position: 'right' }
         ]
       },
@@ -138,15 +142,11 @@ const config = {
               {
                 label: 'Open Payments',
                 href: 'https://openpayments.dev/'
-              },
-              {
-                label: 'Cape Town Software Development Meetup',
-                href: 'https://www.meetup.com/cape-town-software-development-meetup/'
               }
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} CTSD Meetup - Cape Town Software Development - Hackathon. Supported by the Interledger Foundation.`
+        copyright: `Copyright © ${new Date().getFullYear()} Cape Town Software Development Meetup Community.`
       },
       prism: {
         theme: prismThemes.github,
