@@ -138,6 +138,10 @@ const config = {
               {
                 label: 'Open Payments',
                 href: 'https://openpayments.dev/'
+              },
+              {
+                label: 'Cape Town Software Development Meetup',
+                href: 'https://www.meetup.com/cape-town-software-development-meetup/'
               }
             ]
           }
