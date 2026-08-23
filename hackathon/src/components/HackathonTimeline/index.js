@@ -18,7 +18,7 @@ const phases = [
     description:
       'Over the next 30 days, teams will work on their solutions remotely ' +
       'at their own pace. Mentors will be available throughout the month ' +
-      'via Discord to answer questions and provide guidance. Teams may ' +
+      'via Slack to answer questions and provide guidance. Teams may ' +
       'also schedule an optional mid-project check-in to discuss progress, ' +
       'receive feedback, and validate their ideas before the final ' +
       'submission.'
@@ -28,7 +28,7 @@ const phases = [
     title: 'Project Submission & Judging',
     timeline: '6 November - 20 November',
     description:
-      "Submit your completed project through your team's Discord channel. " +
+      "Submit your completed project through your team's Slack channel. " +
       'The judging panel will review all submissions and select the top ' +
       'five teams to advance to the Grand Finale.'
   },
