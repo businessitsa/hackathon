@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import HomepagePrizes from '@site/src/components/HomepagePrizes';
+import HomepageSponsor from '@site/src/components/HomepageSponsor';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -53,6 +54,7 @@ export default function Home() {
         </section>
         <HomepageFeatures />
         <HomepagePrizes />
+        <HomepageSponsor />
       </main>
     </Layout>
   );

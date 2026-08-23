@@ -1,0 +1,66 @@
+/**
+ * Sponsor band - neutral page background so the Interledger logo
+ * (positive lockup in light mode, negative lockup in dark mode)
+ * sits on its intended surface.
+ */
+
+.sponsor {
+  padding: 4rem 0;
+}
+
+.sponsorTitle {
+  font-size: 2.25rem;
+}
+
+.sponsorLogoLink {
+  display: inline-block;
+  margin: 1rem 0 1.5rem;
+}
+
+.sponsorLogo {
+  width: 220px;
+  max-width: 60vw;
+  height: auto;
+}
+
+.sponsorText {
+  max-width: 48rem;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+.sponsorFollow {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.socialLink {
+  display: inline-block;
+  padding: 0.4rem 1.1rem;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.socialLink:hover {
+  background-color: var(--ifm-color-primary);
+  color: var(--brand-olive);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 996px) {
+  .sponsor {
+    padding: 3rem 1rem;
+  }
+}
