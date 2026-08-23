@@ -33,6 +33,60 @@ const config = {
 
   onBrokenLinks: 'throw',
 
+  // Structured data so search engines can surface this as an event
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Hackathon',
+        name: 'Cape Town Software Development Meetup - Open Payments Hackathon',
+        description:
+          "A community-driven hackathon powered by the Interledger Foundation, empowering developers to build better payment solutions for South Africa's spaza shops.",
+        startDate: '2026-10-05',
+        endDate: '2026-11-21',
+        eventAttendanceMode: 'https://schema.org/MixedEventAttendanceMode',
+        eventStatus: 'https://schema.org/EventScheduled',
+        location: [
+          {
+            '@type': 'VirtualLocation',
+            url: 'https://hackathon.devmeetup.capetown'
+          },
+          {
+            '@type': 'Place',
+            name: 'Cape Town, South Africa',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Cape Town',
+              addressCountry: 'ZA'
+            }
+          }
+        ],
+        image: 'https://hackathon.devmeetup.capetown/img/hackathon-social-card.png',
+        isAccessibleForFree: true,
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'ZAR',
+          availability: 'https://schema.org/InStock',
+          url: 'https://hackathon.devmeetup.capetown/docs/register',
+          validFrom: '2026-09-01'
+        },
+        organizer: {
+          '@type': 'Organization',
+          name: 'Cape Town Software Development Meetup',
+          url: 'https://www.meetup.com/cape-town-software-development-meetup/'
+        },
+        sponsor: {
+          '@type': 'Organization',
+          name: 'Interledger Foundation',
+          url: 'https://interledger.org/'
+        }
+      })
+    }
+  ],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -72,8 +126,20 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/hackathon-social-card.png',
+      metadata: [
+        {
+          name: 'keywords',
+          content:
+            'hackathon, Cape Town, South Africa, open payments, Interledger, spaza shops, fintech, payment solutions, developers, software development'
+        },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { property: 'og:type', content: 'website' },
+        {
+          property: 'og:site_name',
+          content: 'Cape Town Software Development Meetup - Hackathon'
+        }
+      ],
       colorMode: {
         respectPrefersColorScheme: true
       },
