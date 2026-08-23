@@ -5,16 +5,16 @@ const phases = [
   {
     phase: 'Phase 1',
     title: 'Registration',
-    timeline: '14–26 August',
+    timeline: '1-30 September',
     description:
       'Register as an individual or team. Once registration closes, ' +
-      'participants will receive access to the Discord community, team ' +
+      'participants will receive access to the Slack community, team ' +
       'channels, resources, and mentor information.'
   },
   {
     phase: 'Phase 2',
     title: 'Build Period',
-    timeline: '1–30 September',
+    timeline: '5 October - 5 November',
     description:
       'Over the next 30 days, teams will work on their solutions remotely ' +
       'at their own pace. Mentors will be available throughout the month ' +
@@ -26,7 +26,7 @@ const phases = [
   {
     phase: 'Phase 3',
     title: 'Project Submission & Judging',
-    timeline: '1 October',
+    timeline: '6 November - 20 November',
     description:
       "Submit your completed project through your team's Discord channel. " +
       'The judging panel will review all submissions and select the top ' +
@@ -35,7 +35,7 @@ const phases = [
   {
     phase: 'Phase 4',
     title: 'Grand Finale',
-    timeline: '24 October',
+    timeline: '21 November',
     highlight: true,
     description:
       'The five finalist teams will present their solutions live to the ' +

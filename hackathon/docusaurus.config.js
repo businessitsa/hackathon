@@ -80,6 +80,11 @@ const config = {
             label: 'Meetup',
             position: 'left'
           },
+          {
+            href: 'https://interledger.slack.com/archives/C0BS0AZLPFF',
+            label: 'Slack',
+            position: 'left'
+          },
           { to: '/docs/register', label: 'Register', position: 'right' }
         ]
       },
@@ -140,8 +145,8 @@ const config = {
                 href: 'https://openpayments.dev/'
               },
               {
-                label: 'Discord Community',
-                href: 'https://discord.gg/xtRb2UK9k'
+                label: 'Slack Community',
+                href: 'https://interledger.slack.com/archives/C0BS0AZLPFF'
               }
             ]
           }
