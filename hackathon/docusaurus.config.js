@@ -57,6 +57,18 @@ const config = {
     ]
   ],
 
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: '/docs'
+      })
+    ]
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -85,6 +97,7 @@ const config = {
             label: 'Slack',
             position: 'left'
           },
+          { type: 'search', position: 'right' },
           { to: '/docs/register', label: 'Register', position: 'right' }
         ]
       },
