@@ -35,7 +35,7 @@ const phases = [
   {
     phase: 'Phase 4',
     title: 'Grand Finale',
-    timeline: '21 November',
+    timeline: '28 November',
     highlight: true,
     description:
       'The five finalist teams will present their solutions live to the ' +
